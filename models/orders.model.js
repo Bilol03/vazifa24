@@ -20,3 +20,7 @@ let orderSchema = new mongoose.Schema({
 		default: Date.now()
 	}
 })
+
+let orders = mongoose.model("orders", orderSchema)
+
+export default orders

@@ -18,10 +18,12 @@ let userSchema = new mongoose.Schema({
         type: String,
         maxLength: 20,
         minLength: 8,
-        validate: [isStrongPassword, "weak password"]
+        validate: [isStrongPassword, "weak password"], 
+        required: true
     }, 
     imagePath: {
-        type: String
+        type: String,
+        required: true
     }
 
 })

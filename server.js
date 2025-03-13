@@ -1,8 +1,8 @@
 import { config } from "dotenv";
 config()
 
-import { app } from "./middlewares/app.js";
 import { connectDB } from "./config/db.js";
+import { app } from "./middlewares/app.js";
 
 
 connectDB()
