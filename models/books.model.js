@@ -35,3 +35,5 @@ let bookSchema = new mongoose.Schema({
 })
 
 let books = mongoose.model("books", bookSchema)
+
+export default books
