@@ -26,6 +26,11 @@ let bookSchema = new mongoose.Schema({
         min: 20,
         max: 2000,
         required: true
+    },
+    status: {
+        type: String,
+        enum: ["Mavjud", "Band"],
+        default: "Mavjud"
     }
 })
 

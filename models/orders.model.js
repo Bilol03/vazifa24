@@ -6,14 +6,13 @@ let orderSchema = new mongoose.Schema({
 		ref: 'users',
 		required: true
 	},
-	orderId: {
+	bookId: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'books',
 	},
-	orderStatus: {
-		type: String,
-		enum: ['Pending', 'Borrowed', 'Returned'],
-		default: 'Pending',
+	confirmed: {
+		type: Boolean,
+		default: false
 	},
 	date: {
 		type: Date,
