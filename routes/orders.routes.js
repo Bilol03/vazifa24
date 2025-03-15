@@ -5,7 +5,7 @@ let route = Router()
 
 route
     .get('/requests', orderController.getOrders)
-    .get("my-borrows/:id", orderController.getMyBorrows)
+    .get("/my-borrows/:id", orderController.getMyBorrows)
     .post("/orders/:bookId", orderController.postOrder)
     .put("/requests/:requestId", orderController.updateOrderStatus)
 
